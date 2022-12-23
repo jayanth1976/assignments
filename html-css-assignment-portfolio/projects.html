@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Jayanth | Gallery</title>
+        <script
+            src="https://kit.fontawesome.com/b6fd831f4f.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav class="nav-main">
+            <div class="nav-in">
+                <div class="logo"></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-me.html">About</a></li>
+                    <li><a href="contact-me.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-con">
+            <div class="gallery-con">
+                <div class="gallery-grid">
+                    <div class="gallery-pic a">
+                        <img src="./images/pic1.jpg" alt="pic1" />
+                        <div class="text">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-pic b">
+                        <img src="./images/pic2.jpg" alt="pic2" />
+                        <div class="text">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-pic c">
+                        <img src="./images/pic3.jpg" alt="pic3" />
+                        <div class="text">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-pic d">
+                        <img src="./images/pic4.jpg" alt="pic4" />
+                        <div class="text">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const links = [
+                "https://bugreportingsys.000webhostapp.com/index.html",
+                "https://jayanth1976.github.io/restaurant-app/",
+                "https://jayanth353.github.io/Projects/Storage/",
+                "https://jayanth353.github.io/Projects/simple_login_page/",
+            ];
+            const view = document.querySelectorAll(".fa-eye");
+            view.forEach((item, idx) => {
+                item.addEventListener("click", () => {
+                    console.log("hi");
+                    location.href = links[idx];
+                });
+            });
+        </script>
+    </body>
+</html>
