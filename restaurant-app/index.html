@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mr.Foodie</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script
+            src="https://kit.fontawesome.com/b6fd831f4f.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <!-- popup bill -->
+        <div id="pop-up">
+            <div id="bill">
+                <div id="close-table">
+                    <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="bill-con">
+                    <h3 id="bill-heading"></h3>
+                    <div id="bill-content">
+                        <div class="bill-content-heading">
+                            <p>SI.no</p>
+                            <p>Item</p>
+                            <p>price</p>
+                            <p>Qty</p>
+                            <p class="">Remove</p>
+                        </div>
+                        <!-- dynamic items -->
+                    </div>
+                    <div id="bill-footer">
+                        <p class="total" id="bill-total"></p>
+                        <button id="generate-bill">Generate Bill</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popup bill end -->
+        <!-- navbar -->
+        <span id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+        <nav id="nav-bar">
+            <div class="nav-header">
+                <i class="fa-sharp fa-solid fa-circle-xmark" id="close-nav"></i>
+            </div>
+            <ul class="nav-ul">
+                <li><a class="nav-link" herf="#">Home</a></li>
+                <li><a class="nav-link" herf="#table">Table</a></li>
+                <li><a class="nav-link" herf="#">About</a></li>
+            </ul>
+        </nav>
+        <!-- navbar-end -->
+        <!-- header -->
+        <header class="header">
+            <div class="banner">
+                <h2>Welcome to</h2>
+                <h1>Mr.Foodie</h1>
+                <a href="#table">Order Now</a>
+            </div>
+        </header>
+        <!-- header-end -->
+
+        <section id="table">
+            <div class="table-con">
+                <div class="table-num">
+                    <!-- <h3 class="center table-heading">tables</h3> -->
+                    <div class="search center">
+                        <input
+                            type="text"
+                            name=""
+                            id="filter-table"
+                            placeholder="Search table"
+                        />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div id="all-tables">
+                        <!-- dynamic tables -->
+                    </div>
+                </div>
+                <div class="dishes">
+                    <div class="search center">
+                        <input
+                            type="text"
+                            name=""
+                            id="filter"
+                            placeholder="Search Item"
+                        />
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            id="icon-food-filter"
+                        ></i>
+                    </div>
+                    <div id="all-food-items">
+                        <!-- <div class="food-item">
+                            <p class="food-item-title">
+                                Biriyani
+                            </p>
+                            <p class="food-item-cost">Rs.250</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./app.js"></script>
+    </body>
+</html>
