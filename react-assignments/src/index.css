@@ -1,13 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #e5e7ed;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #818287;
+    border-radius: 5px;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 70vw;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    transform: translate(-50%, -50%);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3vh;
+    grid-template-rows: 25vh 25vh 25vh;
+}
+.card {
+    border-radius: 0.5rem;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    /* opacity: 0.8; */
+    transition: all 0.3s linear;
+}
+/* .image:hover{
+opacity: 1.0;
+} */
+.image-div {
+    position: relative;
+}
+
+.overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.image-div:hover .overlay {
+    opacity: 1;
+}
+
+.btn {
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.proceed {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 2px solid #0f5132;
+}
+.danger {
+    background: #f8d7da;
+    color: #842029;
+    border: 2px solid #842029;
+}
+.primary {
+    background: rgba(0, 0, 255, 0.3);
+    color: blue;
+    border: 2px solid blue;
+}
+
+.inp {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
+.inp:focus {
+    outline: 2px solid hsla(201, 100%, 50%, 0.5);
+    border: 1px solid hsla(201, 100%, 50%, 0.5);
+}
+.fa-regular {
+    font-size: 0.8rem;
+    /* z-index: 10; */
+    color: white;
+    margin-right: 5px;
+    height: 3vh;
+    width: 3vh;
+}
+.btn-icon {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.App {
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+input[type="checkbox"] {
+    accent-color: #224dff;
+    padding: 3rem;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
 }
