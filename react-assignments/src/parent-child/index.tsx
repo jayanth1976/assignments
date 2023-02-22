@@ -5,7 +5,7 @@ import { VisibilityOffOutlined } from "@mui/icons-material";
 import { Checkbox } from "../atoms/Checkbox";
 import "../index.css";
 import { Button } from "../atoms/Button";
-import theme from "../Theme";
+import theme from "../theme";
 import { Typography } from "@mui/material";
 import styled from "styled-components";
 
