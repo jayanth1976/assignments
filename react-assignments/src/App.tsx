@@ -5,7 +5,8 @@ function App() {
     return (
         <div className="App">
             {/* <SignIn /> */}
-            <CandidateTable />
+            {/* <CandidateTable /> */}
+            <SignIn />
         </div>
     );
 }
