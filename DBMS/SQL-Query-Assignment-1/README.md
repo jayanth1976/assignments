@@ -14,7 +14,10 @@ from category
 where name="Comedy"));
 ```
 
-![ans-1](images/ans-1.png)
+<p align="center">
+<img src='images/ans-1.png'>
+</p>
+<br><br>
 
 ### 2. Find out the top 3 rented horror movies.
 
@@ -28,7 +31,10 @@ ORDER BY rental_rate DESC
 LIMIT 0,3;
 ```
 
-![ans-2](images/ans-2.png)
+<p align="center">
+<img src='images/ans-2.png'>
+</p>
+<br><br>
 
 ### 3. Find out the list of customers from India who have rented sports movies.
 
@@ -56,7 +62,10 @@ where category_id = 15
 )));
 ```
 
-![ans-3](images/ans-3.png)
+<p align="center">
+<img src='images/ans-3.png'>
+</p>
+<br><br>
 
 ### 4. Find out the list of customers from Canada who have rented “NICK WAHLBERG” movies.
 
@@ -75,7 +84,10 @@ and actor.first_name = "NICK"
 and actor.last_name = "WAHLBERG";
 ```
 
-![ans-4](images/ans-4.png)
+<p align="center">
+<img src='images/ans-4.png'>
+</p>
+<br><br>
 
 ### 5. Find out the number of movies in which “SEAN WILLIAMS” acted.
 
@@ -89,4 +101,6 @@ where actor.first_name = "SEAN"
 and actor.last_name = "WILLIAMS")
 ```
 
-![ans-5](images/ans-5.png)
+<p align="center">
+<img src='images/ans-5.png'>
+</p>
